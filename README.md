@@ -9,7 +9,8 @@ ___
 > react-redux<br>
 > redux-actions<br>
 > redux-logger<br>
-> redux-thunk
+> redux-thunk<br>
+> axios
 ___
 
 ## 미들웨어 기본구조
