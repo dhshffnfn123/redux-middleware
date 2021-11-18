@@ -1,6 +1,7 @@
-import { handleActions } from "redux-actions";
+import { createAction, handleActions } from "redux-actions";
+import { call, put, takeLatest } from 'redux-saga/effects';
 import * as api from '../lib/api';
-import createRequestThunk from "../lib/createRequestThunk";
+import { startLoading, finishLoading } from './loading';
 
 // 액션 타입을 선언한다.
 // 한 요청당 세 개를 만들어야 한다.

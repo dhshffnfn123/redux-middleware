@@ -10,7 +10,9 @@ ___
 > redux-actions<br>
 > redux-logger<br>
 > redux-thunk<br>
-> axios
+> axios<br>
+> redux-saga<br>
+> redux-devtools-extension
 ___
 
 ## 미들웨어 기본구조
