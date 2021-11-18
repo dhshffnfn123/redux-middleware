@@ -9,3 +9,10 @@ ___
 > react-redux<br>
 > redux-actions
 ___
+
+## 미들웨어 기본구조
+> const middleware = store => next => action => { ... };
+>> store : 리덕스 스토어 인스턴스<br>
+>> action : 디스패치된 액션<br>
+>> next : next는 함수형태이며, store.dispatch와 비슷한 역할을 한다.
+>>> next(action)을 호출하면 그 다음 처리해야 할 미들웨어에게 액션을 넘겨주고, 다음 미들웨어가 없다면 리듀서에게 넘겨준다.
