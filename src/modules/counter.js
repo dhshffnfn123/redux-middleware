@@ -1,5 +1,5 @@
 import { createAction, handleActions } from 'redux-actions';
-import { delay, put, takeEvery, takeLatest } from 'redux-saga/effects';
+import { delay, put, takeEvery, takeLatest, select } from 'redux-saga/effects';
 
 // 액션 이름 설정
 const INCREASE = 'counter/INCREASE';
@@ -19,6 +19,8 @@ export const decreaseAsync = createAction(DECREASE_ASYNC, () => undefined);
 function* increaseSaga() {
     yield delay(1000); // 1초 기다림
     yield put(increase()); // 특정 액션(increase)을 디스패치함.
+    const number = yield select(state => state.counter); // state는 스토어 상태를 의미함
+    console.log(`현재 값은 ${number} 입니다.`);
 }
 
 function* decreaseSaga() {
