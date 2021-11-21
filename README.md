@@ -42,4 +42,4 @@ ___
 >   - 웹소켓을 사용할 때
 >   - API 요청 실패 시 재요청해야 할 때
 > * ✔ __제너레이터 함수 문법 /study/generator.js 참고__
-> * ✔ __select /study/generator.js 참고__
+> * ✔ __select /study/generator.js 참고__ 
